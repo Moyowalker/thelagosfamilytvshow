@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import {useHistory} from 'react-router';
 
 const Register = () => {
+
+
+  const history = useHistory()
 
     const [user, setUser] = useState({
       familyname : "",
