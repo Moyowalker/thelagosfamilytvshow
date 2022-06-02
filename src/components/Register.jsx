@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import {useHistory} from 'react-router';
+import {useNavigate} from 'react-router';
 
 const Register = () => {
 
 
-  const history = useHistory()
+  const history = useNavigate()
 
     const [user, setUser] = useState({
       familyname : "",
@@ -77,7 +77,7 @@ const Register = () => {
                   Family Name
                 </label>
                 <input
-                  type="email"
+                  type="name"
                   class="form-control"
                   id="name"
                   name="familyname"
